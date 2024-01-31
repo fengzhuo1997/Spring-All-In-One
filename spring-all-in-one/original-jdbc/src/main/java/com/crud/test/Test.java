@@ -25,11 +25,12 @@ public class Test {
         jdbc.insertOne(insertWord);
 
         // updateOne
-        Word updatetWord = new Word(9, "insert", "插入");
-        jdbc.updateOne(updatetWord);
+        Word updatetWord = new Word(12, "add", "添加");
+        int res = jdbc.updateOne(updatetWord);
+        System.out.println(res);
 
         // deleteOne
-        jdbc.deleteOne(9);
+        jdbc.deleteOne(13);
 
         // queryByPage
         ArrayList<Word> pageWord = jdbc.queryByPage(3,2);

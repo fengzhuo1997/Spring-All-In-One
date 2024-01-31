@@ -10,8 +10,15 @@
 
 ## 知识点
 
-**读取resource路径下文件**
+### 1. 读取resource路径下文件
 
 1. InputStream is = this.getClass().getResourceAsStream(fileName);  //拿不到资源
 2. InputStream is = this.getClass().getResourceAsStream("/" + fileName); // 拿到资源
 3. InputStream is = this.getClass().getClassLoader().getResourceAsStream(fileName); //拿到资源
+
+
+### 2. PreparedStatement如何预防SQL注入
+
+`PreparedStatement stmt = conn.prepareStatement(sql);`
+
+https://www.cnblogs.com/roostinghawk/p/9703806.html

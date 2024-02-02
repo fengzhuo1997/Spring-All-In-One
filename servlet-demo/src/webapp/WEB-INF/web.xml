@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>servlet-demo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+    
+    <servlet>
+    	<servlet-name>HelloForm</servlet-name>
+    	<servlet-class>com.servlet.web.HelloForm</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>HelloForm</servlet-name>
+    	<url-pattern>/TomcatTest/HelloForm</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+    	<servlet-name>demo</servlet-name>
+    	<servlet-class>com.servlet.web.controller.DemoController</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>demo</servlet-name>
+    	<url-pattern>/demo</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+    	<servlet-name>QueryAllWord</servlet-name>
+    	<servlet-class>com.servlet.web.controller.QueryAllWordController</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>QueryAllWord</servlet-name>
+    	<url-pattern>/query-qll-word</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+    	<servlet-name>QueryOneWord</servlet-name>
+    	<servlet-class>com.servlet.web.controller.QueryOneWordController</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>QueryOneWord</servlet-name>
+    	<url-pattern>/query-one-word</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+    	<servlet-name>QueryWordByPage</servlet-name>
+    	<servlet-class>com.servlet.web.controller.QueryWordByPageController</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>QueryWordByPage</servlet-name>
+    	<url-pattern>/query-word-by-page</url-pattern>
+  	</servlet-mapping>
+ 
+</web-app>
